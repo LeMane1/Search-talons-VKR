@@ -4,15 +4,22 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "puppeteer": "^11.0.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "nodemon": "^2.0.15",
     "vue-template-compiler": "^2.6.11"
   }
 }
